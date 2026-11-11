@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Satyam Ambulance Service – 24/7 Emergency Ambulance</title>
+<meta name="description" content="Satyam Ambulance Service: round-the-clock emergency and patient transfer ambulances. Call +91 99587 16115.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f4f7fb;--surface:#fff;--ink:#0b2545;--muted:#4a5d78;--red:#d62828;--red-ink:#fff;--navy:#0b2545;--navy-ink:#fff;--line:#d9e2ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1424;--surface:#12203a;--ink:#eaf0f9;--muted:#a3b3cb;--red:#ff4d4d;--red-ink:#1a0505;--navy:#060d19;--line:#223455;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1424;--surface:#12203a;--ink:#eaf0f9;--muted:#a3b3cb;--red:#ff4d4d;--red-ink:#1a0505;--navy:#060d19;--line:#223455;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,"Arial Narrow",Arial,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:800 19px Archivo,sans-serif;text-decoration:none}
+.cross{width:34px;height:34px;border-radius:8px;background:var(--red);display:grid;place-items:center}
+.cross svg{width:20px;height:20px;fill:var(--red-ink)}
+nav{display:none;gap:26px;font-weight:500;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font:700 16px Archivo,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-red{background:var(--red);color:var(--red-ink)}
+.btn-line{border-color:currentColor}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hero{background:var(--navy);color:var(--navy-ink);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:repeating-linear-gradient(135deg,var(--red) 0 22px,#fff 22px 44px)}
+.hero .wrap{padding-top:56px;padding-bottom:72px}
+.pulse{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;background:rgba(255,255,255,.1);padding:7px 14px;border-radius:99px}
+.pulse i{width:10px;height:10px;border-radius:50%;background:#ff4d4d;animation:p 1.4s infinite}
+@keyframes p{0%{box-shadow:0 0 0 0 rgba(255,77,77,.7)}100%{box-shadow:0 0 0 12px rgba(255,77,77,0)}}
+@media (prefers-reduced-motion:reduce){.pulse i{animation:none}html{scroll-behavior:auto}}
+.hero h1{font-size:clamp(40px,9vw,84px);font-weight:900;margin:22px 0 16px;letter-spacing:-.02em;max-width:12ch}
+.hero p{max-width:46ch;color:#c9d6ea;font-size:19px;margin:0 0 28px}
+.call{display:block;font:900 clamp(34px,9.5vw,76px)/1 Archivo,sans-serif;text-decoration:none;color:#fff;letter-spacing:-.01em;margin-bottom:22px}
+.call small{display:block;font:500 15px "Public Sans",sans-serif;color:#9fb3d1;margin-bottom:8px;letter-spacing:0}
+.call:hover{color:#ff7a7a}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-line{color:#fff}
+section{padding:72px 0}
+.sec-h{font-size:clamp(30px,5vw,46px);font-weight:800;margin-bottom:12px}
+.sub{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.grid{display:grid;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:22px;font-weight:800;margin:14px 0 8px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.ic{width:46px;height:46px;border-radius:12px;background:var(--navy);display:grid;place-items:center}
+.ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--red);color:var(--red-ink);display:grid;place-items:center;font:800 20px Archivo,sans-serif}
+.steps h3{font-size:21px;margin-bottom:4px}.steps p{margin:0;color:var(--muted)}
+.feat{display:grid;gap:14px;list-style:none;padding:0;margin:0}
+.feat li{display:flex;gap:12px;align-items:flex-start}
+.feat b{font-family:Archivo,sans-serif;font-size:18px}
+.tick{flex:none;width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center;margin-top:2px}
+.tick svg{width:14px;height:14px;stroke:var(--red-ink);stroke-width:3;fill:none}
+.contact{background:var(--navy);color:var(--navy-ink)}
+.contact .sub{color:#b4c4dd}
+.cbox{display:grid;gap:14px}
+.citem{display:block;background:rgba(255,255,255,.08);border-radius:14px;padding:20px;text-decoration:none}
+.citem span{display:block;font-size:14px;color:#9fb3d1}
+.citem strong{display:block;font:800 clamp(20px,5vw,28px) Archivo,sans-serif;word-break:break-word}
+form{background:var(--surface);color:var(--ink);border-radius:14px;padding:24px;display:grid;gap:14px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+input,textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+footer{background:var(--navy);color:#9fb3d1;font-size:14px;padding:24px 0 96px;border-top:1px solid rgba(255,255,255,.12)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.fab{position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;justify-content:center;font-size:18px;padding:15px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+@media (min-width:760px){
+nav{display:flex}.fab{display:none}footer{padding-bottom:24px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.two{grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.hero .wrap{padding-top:96px;padding-bottom:110px}
+}
+.two{display:grid;gap:32px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top"><span class="cross"><svg viewBox="0 0 24 24"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7z"/></svg></span>Satyam Ambulance</a>
+<nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#why">Why us</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-red" href="tel:+919958716115">Call now</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<span class="pulse"><i></i>Available 24 hours, 7 days a week</span>
+<h1>Help on the way, day or night.</h1>
+<p>Satyam Ambulance Service provides fast, safe and caring ambulance transport for emergencies and planned patient transfers.</p>
+<a class="call" href="tel:+919958716115"><small>Emergency helpline, tap to call</small>+91 99587 16115</a>
+<div class="row">
+<a class="btn btn-red" href="tel:+919958716115">Call ambulance</a>
+<a class="btn btn-line" href="https://wa.me/919958716115">WhatsApp us</a>
+</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2 class="sec-h">Our ambulance services</h2>
+<p class="sub">Whatever the situation, we send the right vehicle with trained staff.</p>
+<div class="grid g3">
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div><h3>Emergency ambulance</h3><p>Quick response for accidents, heart attacks and sudden illness, with basic life support on board.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.500-7 10-7 10z"/></svg></div><h3>ICU &amp; ventilator ambulance</h3><p>Critical-care transport with oxygen, monitors and ventilator support for serious patients.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17V7h11v10M14 10h4l3 3v4h-3M7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></div><h3>Patient transfer</h3><p>Comfortable, planned transport between homes, hospitals and cities, including discharge and dialysis trips.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l14 8M19 8L5 16"/></svg></div><h3>Freezer box service</h3><p>Respectful transport of the deceased with a freezer box, handled with care and dignity.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Standby for events</h3><p>An ambulance and staff on site for weddings, sports, gatherings and other public events.</p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg></div><h3>Oxygen &amp; medical support</h3><p>Oxygen cylinders and trained attendants available for patients who need support during travel.</p></div>
+</div>
+</div></section>
+
+<section id="how" class="alt"><div class="wrap two">
+<div>
+<h2 class="sec-h">Book in three steps</h2>
+<p class="sub">No forms, no waiting. One phone call is all it takes.</p>
+</div>
+<ol class="steps">
+<li><div><h3>Call +91 99587 16115</h3><p>Tell us the patient's condition and where to pick them up.</p></div></li>
+<li><div><h3>We send the nearest ambulance</h3><p>Our team confirms the vehicle and shares the arrival time.</p></div></li>
+<li><div><h3>Safe transfer to the hospital</h3><p>Trained staff care for the patient on the way and help at admission.</p></div></li>
+</ol>
+</div></section>
+
+<section id="why"><div class="wrap two">
+<div>
+<h2 class="sec-h">Why families call Satyam</h2>
+<p class="sub">When every minute counts, you need a service you can trust.</p>
+</div>
+<ul class="feat">
+<li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Open all day, every day</b><br>Our line never closes, including nights and holidays.</div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Fast response</b><br>We dispatch the closest available vehicle right away.</div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Trained, caring staff</b><br>Calm drivers and attendants who put the patient first.</div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Clean, equipped vehicles</b><br>Stretcher, oxygen and basic medical equipment on board.</div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><div><b>Clear, fair pricing</b><br>Ask for the fare on the phone before the trip starts.</div></li>
+</ul>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap two">
+<div>
+<h2 class="sec-h">Need an ambulance now?</h2>
+<p class="sub">For emergencies, call instead of writing. For planned transfers, send us a message.</p>
+<div class="cbox">
+<a class="citem" href="tel:+919958716115"><span>Call, 24/7</span><strong>+91 99587 16115</strong></a>
+<a class="citem" href="https://wa.me/919958716115"><span>WhatsApp</span><strong>+91 99587 16115</strong></a>
+<a class="citem" href="mailto:kumarjitender1581@gmail.com"><span>Email</span><strong>kumarjitender1581@gmail.com</strong></a>
+</div>
+</div>
+<form id="f">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Phone number<input name="p" type="tel" required autocomplete="tel"></label>
+<label>Pickup and drop location<textarea name="m" rows="3" required></textarea></label>
+<button class="btn btn-red" type="submit">Send request by email</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span>© 2026 Satyam Ambulance Service. All rights reserved.</span>
+<span>+91 99587 16115 · kumarjitender1581@gmail.com</span>
+</div></footer>
+
+<a class="btn btn-red fab" href="tel:+919958716115">Call ambulance: +91 99587 16115</a>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var d=new FormData(this);
+var body='Name: '+d.get('n')+'\nPhone: '+d.get('p')+'\nLocation: '+d.get('m');
+location.href='mailto:kumarjitender1581@gmail.com?subject='+encodeURIComponent('Ambulance request')+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
